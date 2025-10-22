@@ -1,8 +1,26 @@
 # destek-chatbot
 
+## Proje Linki 
+https://huggingface.co/spaces/yildirimyasemin/destek-chatbot
+
+## Chatbot' u test etmek için
+
+Müşterilerin soracağı; iade, kargo, sipariş ve hesap işlemleri gibi konulardan yararlanabilirsiniz. 
+
+### Örnek Sorular 
+
+İade/Değişim --> ade süresi kaç gündür?
+
+Sipariş Takibi --> Siparişimi nasıl takip edebilirim?
+
+Hesap Güvenliği --> Şifremi unuttum, ne yapmalıyım?
+
+Ödeme Yöntemleri --> Kapıda ödeme seçeneğiniz var mı?
+
 # RAG Destek Chatbotu (Gemini API)
 
 Bu proje, Akbank GenAI Bootcamp kapsamında geliştirilmiş bir Retrieval-Augmented Generation (RAG) temelli müşteri destek chatbotudur. Chatbot, kullanıcıların sorularına yalnızca sağlanan SSS verilerine dayanarak, Türkçe olarak yanıt verir.
+
 
 ## Projenin Amacı 
 
@@ -36,18 +54,17 @@ Proje , Gemini API'nin gücünü, çok dilli bir arama mekanizmasıyla birleşti
 
 ###  Prompt Teknikleri
 
-**Sistem Talimatı (System Instruction):** Modelin rolü (`Kibar ve Profesyonel Asistan`) ve temel kısıtlamaları (`KESİNLİKLE TÜRKÇE`) API çağrısının `system_instruction` parametresi ile kalıcı olarak sabitlenmiştir.
-**Çok Dilli Arama:** Türkçe kullanıcı sorguları, FAISS'te daha doğru sonuçlar bulmak için otomatik olarak İngilizce'ye çevrilir.
-**Akıllı Geri Dönüş (Graceful Failure):** Kaynakta kesin cevap bulunmayan durumlarda, chatbot tamamen "bilgi yok" demek yerine, **en yakın alakalı bilgiyi** kullanarak mantıklı bir öneri sunar.
+* **Sistem Talimatı (System Instruction):** Modelin rolü (`Kibar ve Profesyonel Asistan`) ve temel kısıtlamaları (`KESİNLİKLE TÜRKÇE`) API çağrısının `system_instruction` parametresi ile kalıcı olarak sabitlenmiştir.
+* **Çok Dilli Arama:** Türkçe kullanıcı sorguları, FAISS'te daha doğru sonuçlar bulmak için otomatik olarak İngilizce'ye çevrilmesi sağlanır.
+* **Akıllı Geri Dönüş (Graceful Failure):** Kaynakta kesin cevap bulunmayan durumlarda, chatbot tamamen "bilgi yok" demek yerine, **en yakın alakalı bilgiyi** sunar.
 
 ## Elde Edilen Sonuçlar Özet 
 
 Proje, hem teknik hem de kullanıcı deneyimi açısından hedeflenen sonuçlara ulaşmıştır:
 
-**Yüksek Doğruluk:** RAG sayesinde, chatbot'un verdiği cevapların büyük çoğunluğu, sağlanan veri setiyle doğrudan doğrulanır.
-**Çok Dilli Erişim:** Kullanıcılar Türkçe sorular sormasına rağmen, İngilizce veri setinden başarıyla bilgi alınabilmektedir.
-**Daha İyi UX:** Basit selamlama sorularına "bilgi yok" cevapları yerine, `Selamlama Filtresi` sayesinde anında ve uygun bir karşılama yapılmaktadır.
+* **Yüksek Doğruluk:** RAG sayesinde, chatbot'un verdiği cevapların büyük çoğunluğu, sağlanan veri setiyle doğrudan doğrulanır.
+* **Çok Dilli Erişim:** Kullanıcılar Türkçe sorular sormasına rağmen, İngilizce veri setinden başarıyla bilgi alınabilmektedir.
+* **UX:** Basit selamlama sorularına "bilgi yok" cevapları yerine, `Selamlama Filtresi` sayesinde anında ve uygun bir karşılama yapılmaktadır.
 
 ---
 
-## Proje Linki 
