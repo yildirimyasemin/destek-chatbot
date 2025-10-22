@@ -36,17 +36,17 @@ Proje , Gemini API'nin gücünü, çok dilli bir arama mekanizmasıyla birleşti
 
 ###  Prompt Teknikleri
 
-* **Sistem Talimatı (System Instruction):** Modelin rolü (`Kibar ve Profesyonel Asistan`) ve temel kısıtlamaları (`KESİNLİKLE TÜRKÇE`) API çağrısının `system_instruction` parametresi ile kalıcı olarak sabitlenmiştir.
-* **Çok Dilli Arama:** Türkçe kullanıcı sorguları, FAISS'te daha doğru sonuçlar bulmak için otomatik olarak İngilizce'ye çevrilir.
-* **Akıllı Geri Dönüş (Graceful Failure):** Kaynakta kesin cevap bulunmayan durumlarda, chatbot tamamen "bilgi yok" demek yerine, **en yakın alakalı bilgiyi** kullanarak mantıklı bir öneri sunar.
+**Sistem Talimatı (System Instruction):** Modelin rolü (`Kibar ve Profesyonel Asistan`) ve temel kısıtlamaları (`KESİNLİKLE TÜRKÇE`) API çağrısının `system_instruction` parametresi ile kalıcı olarak sabitlenmiştir.
+**Çok Dilli Arama:** Türkçe kullanıcı sorguları, FAISS'te daha doğru sonuçlar bulmak için otomatik olarak İngilizce'ye çevrilir.
+**Akıllı Geri Dönüş (Graceful Failure):** Kaynakta kesin cevap bulunmayan durumlarda, chatbot tamamen "bilgi yok" demek yerine, **en yakın alakalı bilgiyi** kullanarak mantıklı bir öneri sunar.
 
 ## Elde Edilen Sonuçlar Özet 
 
 Proje, hem teknik hem de kullanıcı deneyimi açısından hedeflenen sonuçlara ulaşmıştır:
 
-* **Yüksek Doğruluk:** RAG sayesinde, chatbot'un verdiği cevapların büyük çoğunluğu, sağlanan veri setiyle doğrudan doğrulanır.
-* **Çok Dilli Erişim:** Kullanıcılar Türkçe sorular sormasına rağmen, İngilizce veri setinden başarıyla bilgi alınabilmektedir.
-* **Daha İyi UX:** Basit selamlama sorularına "bilgi yok" cevapları yerine, `Selamlama Filtresi` sayesinde anında ve uygun bir karşılama yapılmaktadır.
+**Yüksek Doğruluk:** RAG sayesinde, chatbot'un verdiği cevapların büyük çoğunluğu, sağlanan veri setiyle doğrudan doğrulanır.
+**Çok Dilli Erişim:** Kullanıcılar Türkçe sorular sormasına rağmen, İngilizce veri setinden başarıyla bilgi alınabilmektedir.
+**Daha İyi UX:** Basit selamlama sorularına "bilgi yok" cevapları yerine, `Selamlama Filtresi` sayesinde anında ve uygun bir karşılama yapılmaktadır.
 
 ---
 
