@@ -29,10 +29,10 @@ Proje , Gemini API'nin gücünü, çok dilli bir arama mekanizmasıyla birleşti
 
 | Kategori | Teknoloji | Açıklama |
 | :--- | :--- | :--- |
-| **Generation Model** | **Gemini API** | [cite_start]Cevap üretimi (Generation model) [cite: 42] ve sorgu çevirisi için kullanılmıştır. |
-| **Embedding Model** | **Sentence Transformers** | [cite_start]Türkçe/İngilizce sorgularla İngilizce veri setini eşleştirmek için kritik çok dilli modeli kullandık[cite: 43]. |
-| **Vektör Database** | **FAISS (CPU)** | [cite_start]Yüksek performanslı benzerlik aramasını saniyeler içinde gerçekleştirmek için kullanılmıştır[cite: 43]. |
-| **Pipeline Framework** | **Custom Python Class** | [cite_start]Hazır bir RAG çerçevesi (LangChain, Haystack [cite: 44]) yerine, tüm RAG adımları özel bir Python sınıfı (`RAGChatbot`) içinde manuel olarak yönetilmiştir. |
+| **Generation Model** | **Gemini API** | Cevap üretimi (Generation model) ve sorgu çevirisi için kullanılmıştır. |
+| **Embedding Model** | **Sentence Transformers** | Türkçe/İngilizce sorgularla İngilizce veri setini eşleştirmek için çok dilli modeli kullanıldı. |
+| **Vektör Database** | **FAISS (CPU)** | Yüksek performanslı benzerlik aramasını saniyeler içinde gerçekleştirmek için kullanılmıştır. |
+| **Pipeline Framework** | **Custom Python Class** | Hazır bir RAG çerçevesi (LangChain, Haystack ) yerine, tüm RAG adımları özel bir Python sınıfı (`RAGChatbot`) içinde manuel olarak yönetilmiştir. |
 
 ###  Prompt Teknikleri
 
@@ -40,7 +40,7 @@ Proje , Gemini API'nin gücünü, çok dilli bir arama mekanizmasıyla birleşti
 * **Çok Dilli Arama:** Türkçe kullanıcı sorguları, FAISS'te daha doğru sonuçlar bulmak için otomatik olarak İngilizce'ye çevrilir.
 * **Akıllı Geri Dönüş (Graceful Failure):** Kaynakta kesin cevap bulunmayan durumlarda, chatbot tamamen "bilgi yok" demek yerine, **en yakın alakalı bilgiyi** kullanarak mantıklı bir öneri sunar.
 
-## [cite_start] Elde Edilen Sonuçlar Özet [cite: 12]
+## Elde Edilen Sonuçlar Özet 
 
 Proje, hem teknik hem de kullanıcı deneyimi açısından hedeflenen sonuçlara ulaşmıştır:
 
