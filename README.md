@@ -9,7 +9,7 @@ Müşterilerin soracağı; iade, kargo, sipariş ve hesap işlemleri gibi konula
 
 ### Örnek Sorular 
 
-İade/Değişim --> ade süresi kaç gündür?
+İade/Değişim --> İade süresi kaç gündür?
 
 Sipariş Takibi --> Siparişimi nasıl takip edebilirim?
 
