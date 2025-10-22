@@ -1,0 +1,6 @@
+google-genai
+gradio
+pandas
+numpy
+sentence-transformers
+faiss-cpu
